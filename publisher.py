@@ -6,11 +6,11 @@ def send_message(connection, channel, exchange, routing_key, body):
     print(f"Sent message. Exchange: {exchange}, Routing Key: {routing_key}, Body: {body}")
 
 if __name__ == "__main__":
-    rabbitmq_broker_id = "b-cb5e342c-c7e4-4a62-93aa-9192e138e2f4"
-    rabbitmq_user = "nafiz"
-    rabbitmq_password = "kie5gierai0Uyoh1Ai$j"
-    region = "us-east-1"
-    queue_name = "a"
+    rabbitmq_broker_id = ""
+    rabbitmq_user = ""
+    rabbitmq_password = ""
+    region = ""
+    queue_name = ""
     exchange = ""
     routing_key = queue_name
     json_body={"Hello World":"fs"}
@@ -19,6 +19,6 @@ if __name__ == "__main__":
     connection, channel = create_pika_connection(rabbitmq_broker_id, rabbitmq_user, rabbitmq_password, region)
 
     send_message(connection, channel, exchange, routing_key, message_body)
-    print("dsfd")
+
 
     close_connection(connection)

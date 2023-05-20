@@ -17,10 +17,10 @@ def consume_messages(connection, channel, queue):
 
 
 if __name__ == "__main__":
-    rabbitmq_broker_id = "b-cb5e342c-c7e4-4a62-93aa-9192e138e2f4"
-    rabbitmq_user = "nafiz"
-    rabbitmq_password = "kie5gierai0Uyoh1Ai$j"
-    region = "us-east-1"
+    rabbitmq_broker_id = ""
+    rabbitmq_user = ""
+    rabbitmq_password = ""
+    region = ""
     queue_name = "a"
 
     connection, channel = create_pika_connection(rabbitmq_broker_id, rabbitmq_user, rabbitmq_password, region)
